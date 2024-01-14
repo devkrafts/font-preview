@@ -1,5 +1,6 @@
 {
   "name": "font-preview",
+  "description": "A React component to preview fonts from TTF, WOFF, WOFF2 files.",
   "version": "1.0.2",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -55,6 +56,16 @@
   },
   "files": [
     "dist",
-    "README.md"
-  ]
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "font",
+    "preview",
+    "react",
+    "TTF",
+    "WOFF",
+    "WOFF2"
+  ],
+  "author": "Ayush Jain <ayushjainrksh@gmail.com>"
 }

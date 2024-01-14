@@ -1,7 +1,5 @@
 # A react component to preview fonts.
 
-
-
 ## Installation
 ```
 npm install font-preview
