@@ -14,7 +14,7 @@ function App (): JSX.Element {
         value={fontUrl}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFontUrl(e.target.value)}
       />
-      <FontPreview fontUrl = {fontUrl} text={'abc'}/>
+      <FontPreview fontUrl = {fontUrl}/>
     </div>
   );
 }

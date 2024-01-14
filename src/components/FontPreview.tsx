@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // @ts-expect-error - FontName doesn't have types
 import FontName from 'fontname';
+import { decompress } from 'woff2-encoder';
 import { sampleText } from './constants';
 import { type FontMeta, type FontPreviewProps } from './types';
 
@@ -13,7 +14,13 @@ export default function FontPreview (props: FontPreviewProps): JSX.Element {
       // Fetch font file using URL
       const fontData = await fetch(fontLink);
       // Convert font file to ArrayBuffer to be parsed
-      const fontBuffer = await fontData.arrayBuffer();
+      let fontBuffer = await fontData.arrayBuffer();
+
+      // TODO: Match and decode WOFF to TTF
+      const isWoff2 = fontLink.match(/\.woff2/);
+      if(isWoff2) {
+        fontBuffer = await decompress(fontBuffer);
+      }
       // Parse font file to get font meta data
       const fontMeta: FontMeta[] = FontName.parse(fontBuffer);
       // Apply font to text

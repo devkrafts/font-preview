@@ -15,6 +15,11 @@ yarn add font-preview
 import { FontPreview } from 'font-preview';
 
 <FontPreview
+  fontUrl="https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2"
+  text="The quick brown fox jumps over the lazy dog"
+/>
+OR
+<FontPreview
   fontUrl="https://keybored.pro/static/media/SourceCodePro-Regular.2cacf64afc86b76c81e6.ttf"
   text="The quick brown fox jumps over the lazy dog"
 />
