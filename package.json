@@ -69,5 +69,11 @@
     "WOFF",
     "WOFF2"
   ],
-  "author": "Ayush Jain <ayushjainrksh@gmail.com>"
+  "author": "Ayush Jain <ayushjainrksh@gmail.com>",
+  "license": "GPL-3.0",
+  "homepage": "https://font-preview-zeta.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:devkrafts/font-preview.git"
+  }
 }

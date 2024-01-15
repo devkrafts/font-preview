@@ -1,5 +1,7 @@
 # A react component to preview fonts.
 
+Try it out: https://font-preview-zeta.vercel.app/
+
 ## Installation
 ```
 npm install font-preview
