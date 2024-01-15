@@ -7,7 +7,6 @@ OR
 yarn add font-preview
 ```
 
-
 ## Usage
 ```javascript
 import { FontPreview } from 'font-preview';
@@ -28,6 +27,8 @@ OR
 | --- | --- | --- | --- |
 | fontUrl | string | The url of the font file | true |
 | text | string | The text to preview | false |
+| onFontLoad | function | A callback function to be called when the font is loaded | false |
+| onFontError | function | A callback function to be called when the font fails to load | false |
 
 ## Customization
 You can customize the `<FontPreview />` component by either wrapping it in an element

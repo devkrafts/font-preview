@@ -1,13 +1,14 @@
 {
   "name": "font-preview",
   "description": "A React component to preview fonts from TTF, WOFF, WOFF2 files.",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "dependencies": {
     "fontname": "^1.0.1",
-    "woff2-encoder": "^1.0.3"
+    "woff2-encoder": "^1.0.3",
+    "woff2sfnt-sfnt2woff-browser": "1.0.2"
   },
   "peerDependencies": {
     "react": ">=16",

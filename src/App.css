@@ -1,17 +1,83 @@
 .App {
+  padding-top: 50px;
   text-align: center;
-  margin-top: 100px;
 }
 
 .App__header {
-  font-size: 30px;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #c1830e;
+}
+
+.App__fonts {
+  margin: 0 auto;
+  text-align: left;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.App__fonts span {
+  text-decoration: underline;
+}
+
+.App__fonts button {
+  background: rgb(25, 25, 248);
+  color: white;
+  border-radius: 4px;
+  padding: 4px 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.App__fonts button:hover {
+  color: rgb(25, 25, 248);
+  background-color: white;
 }
 
 .App__input {
   font-size: 16px;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 600px;
-  margin: 20px
+  width: 680px;
+  margin: 20px;
+  border: none;
+  outline: none;
+}
+
+.App__preview {
+  width: 520px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 20px auto;
+  overflow: auto;
+  padding: 40px;
+  position: relative;
+  text-align: left;
+}
+
+.App__font-family, .App__font-error {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.App__font-error span {
+  color: red;
+}
+
+.App__font-family span:first-of-type {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 4px 8px;
+}
+
+.App__font-family span:last-of-type {
+  color: green
 }
