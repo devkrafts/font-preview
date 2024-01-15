@@ -35,7 +35,8 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "rimraf dist && npm run build"
+    "prepare": "rimraf dist && npm run build",
+    "build:site": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [

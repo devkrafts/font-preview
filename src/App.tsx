@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FontPreview } from './components';
 import './App.css';
 import { FontMeta } from './components/types';
+import fontPreviewLogo from './assets/images/font-preview-logo.png';
 
 const fonts = [
   `${window.location.href}fonts/WOFF2/Roboto.woff2`,
@@ -28,6 +29,7 @@ function App (): JSX.Element {
 
   return (
     <div className="App">
+      <div className="App__logo"><img src={fontPreviewLogo} alt='logo'/></div>
       <div className="App__header">Font Preview</div>
         <div className="App__content">
         {
