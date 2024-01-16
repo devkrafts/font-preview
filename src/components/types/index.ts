@@ -9,8 +9,8 @@ export interface FontMeta {
   fontFamily: string
   copyright?: string
   _lang?: number
-  fontSubfamily?: string,
-  ID?: string,
+  fontSubfamily?: string
+  ID?: string
   fullName?: string
   version?: string
   postScriptName?: string
