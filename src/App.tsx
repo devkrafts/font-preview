@@ -31,6 +31,14 @@ function App (): JSX.Element {
     <div className="App">
       <div className="App__logo"><img src={fontPreviewLogo} alt='logo'/></div>
       <div className="App__header">Font Preview</div>
+      <div className="App__links">
+        <a href='https://www.npmjs.com/package/font-preview' target='_blank' rel="noreferrer">
+          How to use?
+        </a>
+        <a href='https://github.com/devkrafts/font-preview' target='_blank' rel="noreferrer">
+          Contribute
+        </a>
+      </div>
       <div className="App__content">
         {
           fonts.map((font, index) => (
