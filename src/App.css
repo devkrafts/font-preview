@@ -11,8 +11,20 @@
 
 .App__header {
   font-size: 50px;
-  margin-bottom: 50px;
   color: #c1830e;
+}
+
+.App__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.App__links a{
+  color: rgb(25, 25, 248);
+  text-decoration: none;
 }
 
 .App__fonts {
